@@ -15,14 +15,14 @@ export default()=>{
     }, []);
 
     const renderTaxis = Object.values(taxis).map(taxi => {
-        // console.log(taxi)
+        console.log(taxi)
         return (
             <tr key={taxi._id}>
-                <td>{taxi._id}</td>
+                <td>{taxi.ID}</td>
                 <td>{taxi.plate_number}</td>
                 <td>{taxi.passengers}</td>
                 <td>{taxi.bio}</td>
-                <td>{taxi.joinDate}</td>
+                <td>{taxi.date}</td>
                 <td>{taxi.driver}</td>
             </tr>
         )
